@@ -1,16 +1,15 @@
-class data_anime {
-
-  String anime_id = '';
+class get_all {
+  int anime_id = 0;
   String anime_name = '';
   String anime_img = '';
 
-  data_anime({
+  get_all({
     required this.anime_id,
     required this.anime_name,
     required this.anime_img
   });
 
-  data_anime.fromJson(Map<String, dynamic> json) {
+  get_all.fromJson(Map<String, dynamic> json) {
     anime_id = json['anime_id'];
     anime_name = json['anime_name'];
     anime_img = json['anime_img'];

@@ -1,0 +1,19 @@
+
+`
+0jaen_ruiz_3_2021_p1/lib/models/response_api.dart,2\9\298cb1a6e5a7931ec59e24750ad4158d1d3896e6
+g
+7jaen_ruiz_3_2021_p1/lib/component/loader_component.dart,0\6\06ce9152338fb7118770aa8892d2d949d4b86067
+P
+ jaen_ruiz_3_2021_p1/pubspec.yaml,6\2\62b0e01d44db54cdaca7b7f5d86d780f255153f6
+f
+6jaen_ruiz_3_2021_p1/lib/screens/anime_home_screen.dart,9\6\96704f6d01ff46e39ba52d124e930c3ada75ff7e
+Q
+!jaen_ruiz_3_2021_p1/lib/main.dart,d\3\d3b54eace5fa5a53e585b00c86fc55793f21afc8
+e
+5jaen_ruiz_3_2021_p1/lib/models/get_anime_details.dart,1\2\12b13e100b8e82fd0eb92ffa880ba6e7b13fc8dd
+[
++jaen_ruiz_3_2021_p1/lib/models/get_all.dart,b\9\b9ea4263657e68c95d7532afe15bd543fc9847c2
+^
+.jaen_ruiz_3_2021_p1/lib/helpers/constants.dart,f\2\f2e879bf7cc011b9414b1e3daab8fefb7824c5fd
+e
+5jaen_ruiz_3_2021_p1/lib/helpers/api_helper_anime.dart,2\9\29f503f3f65795d4bec3bc455456dadcec559632

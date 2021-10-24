@@ -3,7 +3,22 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/component/loader_component.dart">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/helpers/api_helper_anime.dart">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/helpers/api_herper.dart">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/main.dart">
           <value>
             <set />
           </value>
@@ -18,7 +33,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/models/get_anime_details.dart">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/models/response_api.dart">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/jaen_ruiz_3_2021_p1/lib/screens/anime_home_screen.dart">
           <value>
             <set />
           </value>
