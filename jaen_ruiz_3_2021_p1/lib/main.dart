@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Animes App',
+      title: 'The best Animes App',
       home: anime_home_screen(),
     );
   }

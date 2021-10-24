@@ -36,14 +36,11 @@ class _anime_detailsState extends State<anime_details> {
     return Scaffold(
       backgroundColor: Colors.grey.shade50,
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: Text(_anime.anime_name),
       ),
       body: Center(
-        child: /*_showLoader
-            ? LoaderComponent(
-                text: 'Por favor espere...',
-              )
-            :*/
+        child: 
              _getContent(),
       ),
     );
@@ -53,7 +50,7 @@ class _anime_detailsState extends State<anime_details> {
     return Container(
       margin: EdgeInsets.all(10),
       padding: EdgeInsets.all(5),
-      color: Colors.lightGreenAccent,
+      color: Colors.white10,
       child: Column(
         children: <Widget>[
           Stack(
@@ -89,7 +86,7 @@ class _anime_detailsState extends State<anime_details> {
       await showAlertDialog(
           context: context,
           title: 'Error',
-          message: 'Verifica que estes conectado a internet.',
+          message: 'Se esta verificando que estes conectado a internet.',
           actions: <AlertDialogAction>[
             AlertDialogAction(key: null, label: 'Aceptar'),
           ]);
@@ -135,7 +132,7 @@ class _anime_detailsState extends State<anime_details> {
       child: ListView(
         children: _animeDetails.map((e) {
           return Card(
-            color: Colors.lightGreenAccent.shade700,
+            color: Colors.white10,
             child: InkWell(
               child: Container(
                 margin: EdgeInsets.all(10),
@@ -150,7 +147,7 @@ class _anime_detailsState extends State<anime_details> {
                           style: TextStyle(
                               fontSize: 25,
                               fontStyle: FontStyle.normal,
-                              color: Colors.black87),
+                              color: Colors.black),
                         ),
                         Icon(Icons.bakery_dining_sharp, color: Colors.white)
                       ],
@@ -170,7 +167,7 @@ class _anime_detailsState extends State<anime_details> {
       child: Container(
         margin: EdgeInsets.all(20),
         child: Text(
-          'El anime no tiene hechos registrados.',
+          'El anime no tiene detalles registrados.',
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,

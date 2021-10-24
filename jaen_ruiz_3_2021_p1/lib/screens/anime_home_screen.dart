@@ -32,6 +32,7 @@ class _anime_home_screen_state extends State<anime_home_screen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('The best Animes'),
+        backgroundColor: Colors.black,
         actions: <Widget>[
           _isFiltered
               ? IconButton(
@@ -39,7 +40,7 @@ class _anime_home_screen_state extends State<anime_home_screen> {
               : IconButton(onPressed: _show_Filter, icon: Icon(Icons.filter_alt))
         ],
       ),
-      body: Center(
+      body:Center(
         child: _showLoader ? LoaderComponent(text: 'Por favor espere...') : _getContent(),
       ),
     );
@@ -69,7 +70,7 @@ class _anime_home_screen_state extends State<anime_home_screen> {
       await showAlertDialog(
           context: context,
           title: 'Error',
-          message: 'Verifica que estes conectado a internet.',
+          message: 'Se esta verificando la conexion a internet.',
           actions: <AlertDialogAction>[
             AlertDialogAction(key: null, label: 'Aceptar'),
           ]);
@@ -100,11 +101,11 @@ class _anime_home_screen_state extends State<anime_home_screen> {
       child: ListView(
         children: _animes.map((e) {
           return Card(
-            color: Colors.cyan.shade100,
+            color: Colors.blueGrey,
             child: InkWell(
               onTap: () => _godetailanime(e),
               child: Container(
-                margin: EdgeInsets.all(20),
+                margin: EdgeInsets.all(10),
                 padding: EdgeInsets.all(10),
                 child: Column(
                   children: [
@@ -112,16 +113,16 @@ class _anime_home_screen_state extends State<anime_home_screen> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(15),
+                          borderRadius: BorderRadius.circular(0),
                           child: Image.network(
                             e.anime_img,
-                            width: 70,
+                            width: 120,
                           ),
                         ),
                         Text(
                           e.anime_name,
                           style: TextStyle(
-                            fontSize: 15,
+                            fontSize: 20,
                           ),
                         ),
                         Icon(Icons.arrow_forward_ios),
@@ -144,7 +145,7 @@ class _anime_home_screen_state extends State<anime_home_screen> {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-            title: Text('Filtrar Animes'),
+            title: Text('Filtro de animes'),
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
@@ -155,7 +156,7 @@ class _anime_home_screen_state extends State<anime_home_screen> {
                 TextField(
                   autofocus: true,
                   decoration: InputDecoration(
-                      hintText: 'Criterio de búsqueda...',
+                      hintText: 'Ingresar criterio de busqueda...',
                       labelText: 'Buscar',
                       suffixIcon: Icon(Icons.search)),
                   onChanged: (value) {

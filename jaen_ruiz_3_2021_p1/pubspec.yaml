@@ -50,7 +50,6 @@ dev_dependencies:
   shared_preferences: ^2.0.8
   connectivity: ^3.0.6
   adaptive_dialog: ^1.1.0
-  cached_network_image: ^3.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
